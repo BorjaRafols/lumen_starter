@@ -23,7 +23,7 @@ $app->get('/users', function () {
 
 $app->get('/tools', function(){
 	return "Github";
-})
+});
 
 $app->get('/example', 'ExampleController@all');
 $app->get('/example/{slug}', 'ExampleController@get');
