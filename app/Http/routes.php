@@ -21,6 +21,10 @@ $app->get('/users', function () {
     return "list of users";
 });
 
+$app->get('/tools', function(){
+	return "Github";
+})
+
 $app->get('/example', 'ExampleController@all');
 $app->get('/example/{slug}', 'ExampleController@get');
 
